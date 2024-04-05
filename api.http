@@ -21,3 +21,9 @@ GET http://localhost:3333/events/4d920c1e-b52b-4b02-b638-7d7e41c35494
 
 ###
 GET http://localhost:3333/attendees/1/badge
+
+###
+GET http://localhost:3333/attendees/5/check-in
+
+###
+GET http://localhost:3333/events/4d920c1e-b52b-4b02-b638-7d7e41c35494/attendees?name=Diego
