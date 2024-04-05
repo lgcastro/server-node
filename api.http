@@ -2,7 +2,22 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "Um evento para quem é apaixonado por programação",
-  "maximumAttendees": 100
+  "title": "Novo evento",
+  "details": null,
+  "maximumAttendees": 1
 }
+
+###
+POST http://localhost:3333/events/4d920c1e-b52b-4b02-b638-7d7e41c35494/attendees
+Content-Type: application/json
+
+{
+  "name": "Diego Fernandes",
+  "email": "diego2@rocketseat.com.br"
+}
+
+###
+GET http://localhost:3333/events/4d920c1e-b52b-4b02-b638-7d7e41c35494
+
+###
+GET http://localhost:3333/attendees/1/badge
